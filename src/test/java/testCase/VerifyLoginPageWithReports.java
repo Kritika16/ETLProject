@@ -30,7 +30,7 @@ public class VerifyLoginPageWithReports {
 		
 		logger = report.startTest("Verify Login Page");
 		
-		driver = BrowserFactory.getBrowser("Firefox");
+		driver = BrowserFactory.getBrowser("Chrome");
 		
 		driver.get(DataProviderFactory.getConfig().getPageURL());
 		

@@ -62,7 +62,7 @@ public class VerifyLoginPageWithReports1 {
 		login.sendKeysEmailid(DataProviderFactory.getExcel().getData(0, 1, 0));
 		login.sendKeysPassword(DataProviderFactory.getExcel().getData(0, 1, 1));
 
-		
+		login.clickLogin();
 		logger.log(LogStatus.INFO, "Login to application");
 		
 		login.verifyDashboardTitle();

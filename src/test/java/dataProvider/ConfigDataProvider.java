@@ -8,7 +8,7 @@ import java.util.Properties;
 public class ConfigDataProvider {
 	Properties prop;
 	public ConfigDataProvider() throws Exception{
-		File src = new File("C:\\Kritika Study\\Workspace\\MavenETLProject\\Configuration\\config.properties");
+		File src = new File("C:\\Users\\Jay\\git\\ETLProject\\Configuration\\config.properties");
 		FileInputStream file = new FileInputStream(src);
 		prop= new Properties();
 		prop.load(file);

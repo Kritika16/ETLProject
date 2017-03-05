@@ -26,7 +26,7 @@ public class VerifyLoginPageWithReports {
 	@BeforeMethod
 	public void setUp() throws Exception{
 		
-		report = new ExtentReports("./Reports/LoginPageReport.html",true);
+		report = new ExtentReports("C:\\Users\\Jay\\git\\ETLProject\\Reports\\LoginPageReport.html",true);
 		
 		logger = report.startTest("Verify Login Page");
 		
@@ -59,7 +59,7 @@ public class VerifyLoginPageWithReports {
 		login.sendKeysEmailid(DataProviderFactory.getExcel().getData(0, 1, 0));
 		login.sendKeysPassword(DataProviderFactory.getExcel().getData(0, 1, 1));
 
-		
+		login.clickLogin();
 		logger.log(LogStatus.INFO, "Login to application");
 		
 		login.verifyDashboardTitle();

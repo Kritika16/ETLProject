@@ -58,7 +58,7 @@
 <configuration>
  
 <suiteXmlFiles>
-<suiteXmlFile></suiteXmlFile>
+<suiteXmlFile>smoketest.xml</suiteXmlFile>
 </suiteXmlFiles>
  
 </configuration>
